@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <title>server</title>
+    <meta content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1.0" name="viewport">
+    <meta charSet="UTF-8">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy">
+    <meta content="server" name="description">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          rel="stylesheet"/>
+    <!--Stylesheets-->
+    <link href="../public/assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<form id="profileForm">
+    <label for="selectedValue"></label><select id="selectedValue" name="choice">
+    <option value="01">TEST-01 | 000000000000</option>
+    <option value="02">TEST-02 | 111111111111</option>
+    <option value="03">TEST-03 | 222222222222</option>
+</select>
+    <button onclick="executeScript()" type="button">Submit</button>
+</form>
+
+<script src="../public/assets/js/profiles.js"></script>
+</body>
+</html>

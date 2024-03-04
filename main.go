@@ -1,15 +1,3 @@
-# webserver in Go
-
-**A quick start to setting up a webserver in Go.**
-
-### Install Go (Official website: [Go](https://go.dev/learn/))
-
-In your terminal: `brew install go` and check version with: `go version`.           
-Create new folder: `mkdir my-webserver` and navigate into it: `cd my-webserver`.                    
-Create a new Go file inside that folder: `touch main.go`.                       
-Drop this code snippet inside your `main.go` file.
-
-```go
 package main
 
 import (
@@ -59,8 +47,7 @@ func main() {
 	fmt.Println("Current working directory:", currentWorkingDir)
 
 	// Dynamically extract the port from the URL
-	// or use a static value
-	port := 3000 
+	port := 3000 // or use the value you extracted from the URL
 	addr := fmt.Sprintf(":%d", port)
 
 	http.HandleFunc("/executeScript", executeScript)
@@ -83,11 +70,3 @@ func main() {
 	// Wait for an interrupt signal to gracefully shut down the server
 	select {}
 }
-```
-From inside the folder start the Go server: `go run main.go`.
-
-Create a new folder: `mkdir public`.                
-Set up your basic HTML page (see example).              
-Add some JavaScript (see example)  to make a POST request to the Go server.                    
-Open your web application: `http://localhost:3000/executeScript`.  
-
